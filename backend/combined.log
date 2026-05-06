@@ -1,0 +1,32 @@
+{"level":"info","message":"Server running on port 3001","timestamp":"2026-04-27T13:45:55.983Z"}
+{"level":"error","message":"Registration error: database \"appbookingsys_dev\" does not exist","timestamp":"2026-04-27T13:50:39.292Z"}
+{"level":"error","message":"Register route error: database \"appbookingsys_dev\" does not exist","timestamp":"2026-04-27T13:50:39.292Z"}
+{"level":"info","message":"User registered: k.v.raghava.225@gmail.com","timestamp":"2026-04-27T13:56:00.743Z"}
+{"level":"error","message":"Login error: Invalid password","timestamp":"2026-04-27T14:00:51.154Z"}
+{"level":"error","message":"Login route error: Invalid password","timestamp":"2026-04-27T14:00:51.154Z"}
+{"level":"info","message":"User logged in: k.v.raghava.225@gmail.com","timestamp":"2026-04-27T14:01:03.223Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2026-04-27T14:01:31.556Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2026-04-27T14:01:32.568Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2026-04-27T14:01:57.617Z"}
+{"level":"info","message":"User logged in: k.v.raghava.225@gmail.com","timestamp":"2026-04-27T14:03:16.709Z"}
+{"level":"info","message":"Appointment created: 1","timestamp":"2026-04-27T14:34:28.340Z"}
+{"level":"error","message":"Login error: User not found","timestamp":"2026-04-27T14:35:21.418Z"}
+{"level":"error","message":"Login route error: User not found","timestamp":"2026-04-27T14:35:21.418Z"}
+{"level":"info","message":"User logged in: doctor1@example.com","timestamp":"2026-04-27T14:35:33.643Z"}
+{"level":"info","message":"User logged in: k.v.raghava.225@gmail.com","timestamp":"2026-04-27T14:36:18.601Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2026-04-27T14:37:51.168Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2026-04-27T14:38:04.236Z"}
+{"level":"info","message":"User logged in: doctor1@example.com","timestamp":"2026-04-27T14:38:23.271Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:38:23.297Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:38:23.616Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:38:55.501Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:38:55.508Z"}
+{"level":"info","message":"User logged in: doctor1@example.com","timestamp":"2026-04-27T14:39:23.665Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:39:23.681Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:39:24.002Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2026-04-27T14:43:26.027Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2026-04-27T14:44:05.032Z"}
+{"level":"info","message":"User logged in: doctor1@example.com","timestamp":"2026-04-27T14:44:55.677Z"}
+{"level":"info","message":"Appointment 1 status updated to confirmed","timestamp":"2026-04-27T14:45:14.301Z"}
+{"level":"info","message":"User logged in: doctor1@example.com","timestamp":"2026-04-27T14:45:43.175Z"}
+{"level":"info","message":"User logged in: k.v.raghava.225@gmail.com","timestamp":"2026-04-27T14:46:02.767Z"}

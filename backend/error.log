@@ -1,0 +1,12 @@
+{"level":"error","message":"Registration error: database \"appbookingsys_dev\" does not exist","timestamp":"2026-04-27T13:50:39.292Z"}
+{"level":"error","message":"Register route error: database \"appbookingsys_dev\" does not exist","timestamp":"2026-04-27T13:50:39.292Z"}
+{"level":"error","message":"Login error: Invalid password","timestamp":"2026-04-27T14:00:51.154Z"}
+{"level":"error","message":"Login route error: Invalid password","timestamp":"2026-04-27T14:00:51.154Z"}
+{"level":"error","message":"Login error: User not found","timestamp":"2026-04-27T14:35:21.418Z"}
+{"level":"error","message":"Login route error: User not found","timestamp":"2026-04-27T14:35:21.418Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:38:23.297Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:38:23.616Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:38:55.501Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:38:55.508Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:39:23.681Z"}
+{"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:39:24.002Z"}
