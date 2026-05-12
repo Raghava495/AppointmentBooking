@@ -15,6 +15,7 @@
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "chai": "^6.2.2",
+    "cookie-parser": "^1.4.7",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mocha": "^11.7.5",

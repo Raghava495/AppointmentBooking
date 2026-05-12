@@ -10,3 +10,11 @@
 {"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:38:55.508Z"}
 {"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:39:23.681Z"}
 {"level":"error","message":"Get provider route error: invalid input syntax for type integer: \"my-appointments\"","timestamp":"2026-04-27T14:39:24.002Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2026-05-12T16:09:48.939Z"}
+{"level":"error","message":"Auth error: jwt expired","timestamp":"2026-05-12T16:09:48.953Z"}
+{"level":"error","message":"Login error: Invalid password","timestamp":"2026-05-12T16:10:04.122Z"}
+{"level":"error","message":"Login route error: Invalid password","timestamp":"2026-05-12T16:10:04.123Z"}
+{"level":"error","message":"Login error: Invalid password","timestamp":"2026-05-12T16:10:07.702Z"}
+{"level":"error","message":"Login route error: Invalid password","timestamp":"2026-05-12T16:10:07.704Z"}
+{"level":"error","message":"Login error: Invalid password","timestamp":"2026-05-12T16:10:44.989Z"}
+{"level":"error","message":"Login route error: Invalid password","timestamp":"2026-05-12T16:10:44.990Z"}

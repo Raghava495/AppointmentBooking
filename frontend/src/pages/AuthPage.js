@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+// Configure axios to include credentials (cookies) in all requests
+axios.defaults.withCredentials = true;
+
 const AuthPage = ({ onAuthSuccess }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
@@ -24,7 +27,9 @@ const AuthPage = ({ onAuthSuccess }) => {
     try {
       const url = isLogin ? '/api/auth/login' : '/api/auth/register';
       const response = await axios.post(url, formData);
-      localStorage.setItem('token', response.data.token);
+      
+      // Token is now stored in secure HTTP-only cookie automatically
+      // No need to store in localStorage
       localStorage.setItem('user', JSON.stringify(response.data.user));
       onAuthSuccess(response.data.user);
     } catch (err) {

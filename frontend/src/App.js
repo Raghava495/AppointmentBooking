@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './App.css';
 import AuthPage from './pages/AuthPage';
 import AppointmentPage from './pages/AppointmentPage';
 import ProviderDashboard from './pages/ProviderDashboard';
+
+// Configure axios to include credentials (cookies) in all requests
+axios.defaults.withCredentials = true;
 
 function App() {
   const [user, setUser] = useState(null);
@@ -14,10 +18,17 @@ function App() {
     }
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    setUser(null);
+  const handleLogout = async () => {
+    try {
+      // Call logout endpoint to clear the auth cookie
+      await axios.post('/api/auth/logout');
+    } catch (error) {
+      console.error('Logout error:', error);
+    } finally {
+      // Clear local storage
+      localStorage.removeItem('user');
+      setUser(null);
+    }
   };
 
   const handleAuthSuccess = (userData) => {

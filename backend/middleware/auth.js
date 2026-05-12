@@ -3,7 +3,14 @@ const logger = require('../config/logger');
 
 const authMiddleware = (req, res, next) => {
   try {
-    const token = req.headers.authorization?.split(' ')[1];
+    // Try to get token from cookies first (cookie-based auth)
+    let token = req.cookies?.authToken;
+    
+    // Fallback to Authorization header (Bearer token) for compatibility
+    if (!token) {
+      token = req.headers.authorization?.split(' ')[1];
+    }
+    
     if (!token) {
       return res.status(401).json({ message: 'No token provided' });
     }

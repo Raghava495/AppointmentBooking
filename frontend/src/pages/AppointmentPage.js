@@ -3,6 +3,9 @@ import axios from 'axios';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 
+// Configure axios to include credentials (cookies) in all requests
+axios.defaults.withCredentials = true;
+
 const AppointmentPage = ({ user }) => {
   const [providers, setProviders] = useState([]);
   const [selectedProvider, setSelectedProvider] = useState(null);
@@ -13,8 +16,6 @@ const AppointmentPage = ({ user }) => {
   const [appointments, setAppointments] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-
-  const token = localStorage.getItem('token');
 
   const fetchProviders = useCallback(async () => {
     try {
@@ -27,14 +28,13 @@ const AppointmentPage = ({ user }) => {
 
   const fetchAppointments = useCallback(async () => {
     try {
-      const response = await axios.get('/api/appointments', {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      // Token is now in secure cookie, no need to pass in header
+      const response = await axios.get('/api/appointments');
       setAppointments(response.data);
     } catch (err) {
       setError('Failed to fetch appointments');
     }
-  }, [token]);
+  }, []);
 
   useEffect(() => {
     fetchProviders();
@@ -85,9 +85,6 @@ const AppointmentPage = ({ user }) => {
           date: dateString,
           time: selectedSlot,
           notes,
-        },
-        {
-          headers: { Authorization: `Bearer ${token}` },
         }
       );
       setError('');
@@ -107,10 +104,7 @@ const AppointmentPage = ({ user }) => {
     try {
       await axios.put(
         `/api/appointments/${appointmentId}/cancel`,
-        {},
-        {
-          headers: { Authorization: `Bearer ${token}` },
-        }
+        {}
       );
       fetchAppointments();
       alert('Appointment cancelled');

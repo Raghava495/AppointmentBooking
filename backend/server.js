@@ -1,4 +1,5 @@
 const express = require('express');
+const cookieParser = require('cookie-parser');
 const winston = require('winston');
 const logger = require('./config/logger');
 const authRoutes = require('./routes/auth');
@@ -9,6 +10,8 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(express.json());
+// Parse cookies from request headers
+app.use(cookieParser());
 
 // API Routes
 app.use('/api/auth', authRoutes);
