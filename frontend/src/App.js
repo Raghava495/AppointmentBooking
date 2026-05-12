@@ -5,8 +5,10 @@ import AuthPage from './pages/AuthPage';
 import AppointmentPage from './pages/AppointmentPage';
 import ProviderDashboard from './pages/ProviderDashboard';
 
-// Configure axios to include credentials (cookies) in all requests
+// Configure axios for cross-origin requests with cookies
 axios.defaults.withCredentials = true;
+// Set base URL for API requests
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
 
 function App() {
   const [user, setUser] = useState(null);

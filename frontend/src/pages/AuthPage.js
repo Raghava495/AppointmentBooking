@@ -3,6 +3,7 @@ import axios from 'axios';
 
 // Configure axios to include credentials (cookies) in all requests
 axios.defaults.withCredentials = true;
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
 
 const AuthPage = ({ onAuthSuccess }) => {
   const [isLogin, setIsLogin] = useState(true);

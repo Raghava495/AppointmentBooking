@@ -5,6 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 
 // Configure axios to include credentials (cookies) in all requests
 axios.defaults.withCredentials = true;
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
 
 const AppointmentPage = ({ user }) => {
   const [providers, setProviders] = useState([]);
